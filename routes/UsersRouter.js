@@ -21,19 +21,19 @@ router.post("/loggin", LoggIn);
 
 router.post("/loggout", loggOut);
 
-router.get("/profile", authenticate, getProfile);
+router.get("/profile", getProfile);
 
-router.put("/profile", authenticate, updateProfile);
+router.put("/profile", updateProfile);
 
 router.post("/create-user", createUser);
 
-router.post("/add-tocart/:prodId", authenticate, addPordToCart);
+router.post("/add-tocart/:prodId", addPordToCart);
 
-router.post("/remove-fromCart/:prodId", authenticate, removeProdToCart);
+router.post("/remove-fromCart/:prodId", removeProdToCart);
 
-router.post("/add-shippingAddress", authenticate, addShippingAddress);
+router.post("/add-shippingAddress", addShippingAddress);
 
-router.post("/clear-cart", authenticate, clearCart);
+router.post("/clear-cart", clearCart);
 
 // Admin Routes 👇👇👇👇
 
