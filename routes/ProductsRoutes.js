@@ -18,7 +18,7 @@ import {
 import formidable from "express-formidable";
 const router = Router();
 
-// router.use(authenticate);
+router.use(authenticate);
 
 // Reviews---------------------
 
