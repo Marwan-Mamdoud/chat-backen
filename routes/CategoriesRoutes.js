@@ -8,7 +8,7 @@ import {
 import { authenticate, authorized } from "../middlewares/AuthMiddleware.js";
 const router = Router();
 
-router.use(authenticate);
+// router.use(authenticate);
 
 router.get("/getAll-categories", getAllCategories);
 

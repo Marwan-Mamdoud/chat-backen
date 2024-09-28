@@ -37,7 +37,7 @@ router.post("/clear-cart", authenticate, clearCart);
 
 // Admin Routes 👇👇👇👇
 
-router.use(authenticate, authorized);
+router.use(authorized);
 
 router.get("/get-all-users", getAllUsers);
 
