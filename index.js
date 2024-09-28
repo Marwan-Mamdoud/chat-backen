@@ -20,7 +20,6 @@ const port = process.env.PORT || 5000;
 const app = express();
 
 app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
@@ -30,11 +29,9 @@ app.use(function (req, res, next) {
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://e-commerce-pink-alpha-55.vercel.app", // استبدل بالنطاق الصحيح
     methods: ["GET", "POST", "PUT", "DELETE"],
-    // allowedHeaders: ["Content-Type", "Authorization"],
-
-    credentials: true,
+    credentials: true, // يسمح بإرسال الاعتمادات
   })
 );
 
