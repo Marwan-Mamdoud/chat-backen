@@ -36,13 +36,13 @@ router.get("/getBest-products", getBestProducts);
 
 router.get("/getNewest-products", getNewestProducts);
 
-router.get("/getCustom-products", authenticate, fetchCustomProduct);
+router.get("/getCustom-products", fetchCustomProduct);
 
 router.post("/filter-products", filterProducts);
 
 //==========================================================================
 
-router.use(authenticate);
+// router.use(authenticate);
 
 // Products....................
 
